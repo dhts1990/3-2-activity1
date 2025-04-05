@@ -1,12 +1,12 @@
 provider "aws" {
-  region = "ap-southeast-1"
+  region = "us-east-1"
 }
 
 terraform {
   backend "s3" {
-    bucket = "sctp-ce8-tfstate"
+    bucket = "sctp-ce9-tfstate"
     key    = "huang-s3-tf-ci.tfstate"  #Change this
-    region = "ap-southeast-1"
+    region = "us-east-1"
   }
 }
 
